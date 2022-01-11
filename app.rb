@@ -12,7 +12,7 @@ class BookmarkManager < Sinatra::Base
     # Routes
     get '/' do
         @bookmarks = Bookmark.show_bookmarks
-        
+      
     erb :index
     end
 

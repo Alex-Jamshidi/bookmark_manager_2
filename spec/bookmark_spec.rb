@@ -1,12 +1,13 @@
 require 'bookmark'
+require 'pg'
 
 describe 'Bookmark' do
   connection = PG.connect(dbname: 'bookmark_manager_test')
-  connection.exec('TRUNCATE TABLE bookmarks;')
   connection.exec("INSERT INTO bookmarks (url) VALUES ('http://www.google.com');")
   connection.exec("INSERT INTO bookmarks (url) VALUES ('http://www.instagram.com');")
   connection.exec("INSERT INTO bookmarks (url) VALUES ('http://www.makersacademy.com');")
   result = connection.exec('SELECT * FROM bookmarks')
+ 
 
   describe '.show_bookmarks' do
     it 'returns all bookmarks' do
