@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/vanessaflorio/Desktop/bookmark_challenge/bookmark_manager/spec/bookmark_spec.rb": {
+      "/Users/alexanderjamshidi/Documents/Projects/bookmark_manager/spec/bookmark_spec.rb": {
         "lines": [
           1,
           null,
@@ -9,6 +9,15 @@
           1,
           1,
           1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          4,
+          null,
           1,
           1,
           1,
@@ -18,21 +27,21 @@
           null
         ]
       },
-      "/Users/vanessaflorio/Desktop/bookmark_challenge/bookmark_manager/spec/features/view_bookmark_spec.rb": {
+      "/Users/alexanderjamshidi/Documents/Projects/bookmark_manager/spec/features/view_bookmark_spec.rb": {
         "lines": [
           1,
           1,
           1,
           1,
-          1,
-          1,
-          1,
+          0,
+          0,
+          0,
           null,
           null,
           null
         ]
       }
     },
-    "timestamp": 1641907497
+    "timestamp": 1641917432
   }
 }
