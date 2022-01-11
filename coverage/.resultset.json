@@ -28,6 +28,25 @@
           null
         ]
       },
+      "/Users/vanessaflorio/Desktop/bookmark_challenge/bookmark_manager/spec/features/create_bookmark_spec.rb": {
+        "lines": [
+          null,
+          1,
+          1,
+          1,
+          1,
+          0,
+          null,
+          null,
+          1,
+          1,
+          1,
+          0,
+          0,
+          null,
+          null
+        ]
+      },
       "/Users/vanessaflorio/Desktop/bookmark_challenge/bookmark_manager/spec/features/view_bookmark_spec.rb": {
         "lines": [
           1,
@@ -51,6 +70,6 @@
         ]
       }
     },
-    "timestamp": 1641920629
+    "timestamp": 1641922144
   }
 }

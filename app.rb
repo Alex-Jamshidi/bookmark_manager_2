@@ -16,6 +16,7 @@ class BookmarkManager < Sinatra::Base
     erb :index
     end
 
+    #ßget '/new_bookmark' do
     
     
 
