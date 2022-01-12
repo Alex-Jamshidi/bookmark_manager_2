@@ -1,5 +1,7 @@
-require 'spec_helper.rb'
+# frozen_string_literal: true
+
+require 'spec_helper'
 
 def save_and_show
-    visit('/')
+  visit('/')
 end

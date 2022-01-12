@@ -1,10 +1,11 @@
+# frozen_string_literal: true
+
 require 'bookmark'
 require 'pg'
 
 describe 'Bookmark' do
   describe '.show_bookmarks' do
     it 'returns all bookmarks' do
-
       Bookmark.add_bookmark('http://www.google.com')
       Bookmark.add_bookmark('http://www.instagram.com')
       Bookmark.add_bookmark('http://www.makersacademy.com')
@@ -16,4 +17,3 @@ describe 'Bookmark' do
     end
   end
 end
-
