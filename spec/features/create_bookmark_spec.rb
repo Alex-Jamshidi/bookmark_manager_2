@@ -9,8 +9,9 @@ feature 'Adding a bookmark' do
 
   scenario 'An internet user can add a bookmark' do
     visit('/new_bookmark')
+    fill_in :title, with: 'GitHub'
     fill_in :url, with: 'http://www.github.com'
     click_button 'Submit'
-    expect(page).to have_content 'http://www.github.com'
+    expect(page).to have_content 'GitHub'
   end
 end

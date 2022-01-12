@@ -3,6 +3,12 @@
 require 'pg'
 
 class Bookmark
+
+  def initialize(title, url)
+    @title = title
+    @url = url
+  end
+  
   def self.connect
     if ENV['rspec'] == 'test'
       PG.connect(dbname: 'bookmark_manager_test')
@@ -15,11 +21,11 @@ class Bookmark
     connection = connect
 
     result = connection.exec('SELECT * FROM bookmarks;')
-    result.map { |bookmark| bookmark['url'] }
+    result.map { |bookmark| { title: bookmark['title'], url: bookmark['url'] } }
   end
 
-  def self.add_bookmark(url)
+  def self.add_bookmark(title, url)
     connection = connect
-    connection.exec("INSERT INTO bookmarks (url) VALUES ('#{url}');")
+    connection.exec("INSERT INTO bookmarks (title, url) VALUES ('#{title}', '#{url}');")
   end
 end

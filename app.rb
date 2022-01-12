@@ -14,6 +14,8 @@ class BookmarkManager < Sinatra::Base
   get '/' do
     p 'Welcome to the bookmarks page.'
     @bookmarks = Bookmark.show_bookmarks
+    p '@bookmarks...'
+    p @bookmarks 
     erb :index
   end
 
@@ -23,7 +25,7 @@ class BookmarkManager < Sinatra::Base
   end
 
   post '/' do
-    Bookmark.add_bookmark(params[:url])
+    Bookmark.add_bookmark(params[:title], params[:url])
     p 'Adding bookmark to list and heading back there..'
     redirect '/'
   end
