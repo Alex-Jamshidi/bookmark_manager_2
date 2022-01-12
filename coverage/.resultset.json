@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/victoriablack/Projects/Makers/week_4/bookmark_manager_2/spec/bookmark_spec.rb": {
+      "/Users/alexanderjamshidi/Documents/Projects/bookmark_manager/spec/bookmark_spec.rb": {
         "lines": [
           null,
           null,
@@ -12,19 +12,46 @@
           1,
           1,
           1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
           null,
           null,
           1,
           null,
           1,
+          1,
+          1,
+          1,
           null,
-          null,
+          1,
+          1,
+          1,
+          1,
           null,
           null,
           null
         ]
       },
-      "/Users/victoriablack/Projects/Makers/week_4/bookmark_manager_2/spec/features/create_bookmark_spec.rb": {
+      "/Users/alexanderjamshidi/Documents/Projects/bookmark_manager/spec/database_helpers.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/alexanderjamshidi/Documents/Projects/bookmark_manager/spec/features/create_bookmark_spec.rb": {
         "lines": [
           null,
           null,
@@ -45,7 +72,7 @@
           null
         ]
       },
-      "/Users/victoriablack/Projects/Makers/week_4/bookmark_manager_2/spec/features/view_bookmark_spec.rb": {
+      "/Users/alexanderjamshidi/Documents/Projects/bookmark_manager/spec/features/view_bookmark_spec.rb": {
         "lines": [
           null,
           null,
@@ -67,6 +94,6 @@
         ]
       }
     },
-    "timestamp": 1642004916
+    "timestamp": 1642010870
   }
 }
