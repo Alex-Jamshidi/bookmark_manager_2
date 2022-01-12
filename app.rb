@@ -11,10 +11,22 @@ class BookmarkManager < Sinatra::Base
 
     # Routes
     get '/' do
-        @bookmarks = Bookmark.show_bookmarks
-      
-    erb :index
+      p "Welcome to the bookmarks page."
+      @bookmarks = Bookmark.show_bookmarks
+      erb :index
     end
+
+    get '/new_bookmark' do
+      p "Heading over to new bookmarks page..."
+      erb :new_bookmark
+    end
+
+    post '/' do
+      Bookmark.add_bookmark(params[:url])
+      p "Adding bookmark to list and heading back there.."
+      redirect '/'
+    end
+
 
     #ßget '/new_bookmark' do
     

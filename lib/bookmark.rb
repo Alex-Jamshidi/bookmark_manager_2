@@ -1,16 +1,25 @@
 require 'pg'
 
 class Bookmark
-    
-  def self.show_bookmarks
+   
+  def self.connect
     if ENV['rspec'] == 'test'
-      connection = PG.connect(dbname: 'bookmark_manager_test')
+      PG.connect(dbname: 'bookmark_manager_test')
     else
-      connection = PG.connect(dbname: 'bookmark_manager')
+      PG.connect(dbname: 'bookmark_manager')
     end
+  end
+
+  def self.show_bookmarks
+    connection = self.connect
 
     result = connection.exec('SELECT * FROM bookmarks;')
     result.map { |bookmark| bookmark['url'] }
-    
   end
+
+  def self.add_bookmark(url)
+    connection = self.connect
+    connection.exec("INSERT INTO bookmarks (url) VALUES ('#{url}');")
+  end
+
 end
